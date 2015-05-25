@@ -1,0 +1,3 @@
+dev: /dev/sdf
+trace: test_trace.txt
+log: log.txt
