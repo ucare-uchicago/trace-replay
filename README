@@ -20,8 +20,7 @@ Logic:
 Read preprocessed trace to a resuable TraceEvent struct (save memory) and push that struct into a global queue. Set up global buffer for those IO request, if you don't want to use global buffer, simply go to IOutil.h, set macro USE_GLOBAL_BUFF to false. Then let timmer begin to record time, once event time reached, submit the IO request. When the IO request complete, the callback function will be called. Then record the output to one log output file. Once all IO request completed, the program exit.
 
 Output Format:
-For each line: event time, block number, block count, write or read, latency, throughput,
-		current submitCount, current completeCount, this request's submitCount, this request's complete count;
+For each line: event time, block number, block count, write or read, latency, throughput, current submitCount, current completeCount, this request's submitCount, this request's complete count;
 
 Contact:
 Any question, contact chengwu@uchicago.edu
