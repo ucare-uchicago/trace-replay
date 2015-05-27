@@ -4,7 +4,7 @@
 # ====================================================
 
 Intro:
-A simple trace replayer, based on previous Moren's code. Moren's code is too overkilled and complex. I modified the code to let it more readable and easier. I uses posix AIO to replay trace event instead of multi thread way.
+A simple trace replayer, based on previous Moren's code. Moren's code is too overkilled and complex. I modified the code to let it be more readable and easier. I use posix AIO to replay trace event instead of multi thread way. (I set default posix AIO thread pool up to 50 threads to meet requirement of parallel IO, feel free to increase or decrease it inside IOuitl.h)
 
 Requirement:
 1. If you want to replay a trace, you need to do preprocess by trace-edit, then feel free to substitute trace name in Config file
