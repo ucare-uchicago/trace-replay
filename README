@@ -11,7 +11,7 @@ Requirement:
 
 2. Need g++ version 4.8 or above to compile it, since our timer is from c++11 standard to provide high resolute timer. I already install g++ 4.8 in UCARE machine.
 
-3. Feel free to change config file which is Config.txt, but need one WHITE SPACE between
+3. Feel free to change config file which is Config.txt, but need one WHITE SPACE in between
 
 Compile:
 Already include Makefile, simply run "make" to compile and "make clean" to remove.
