@@ -14,6 +14,7 @@ namespace ucare {
 
 #define MEM_ALIGN             512  // Memory alignment
 #define USE_GLOBAL_BUFF	true	//if you don't want to use global buffer, simply change to false
+#define AIO_THREAD_POOL_SIZE    50
 
 static int submitCount = 0; // count IO submitted
 
@@ -112,7 +113,7 @@ static void replayer_aio_init(){
 	aioinit aioParam = {0};
 
 	//two thread for each device is better
-	aioParam.aio_threads = 20;
+	aioParam.aio_threads = AIO_THREAD_POOL_SIZE;
 	aioParam.aio_num = 2048;
 	aioParam.aio_idle_time = 1;	
 	aio_init(&aioParam);
